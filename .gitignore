@@ -1,0 +1,14 @@
+# Python build and virtual-environment files
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local runtime data: may contain personal application-use history
+data/
+reports/
+*.log
+
+# Build outputs
+*.o
+*.ko
+test_user

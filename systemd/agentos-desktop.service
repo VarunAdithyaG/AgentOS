@@ -1,0 +1,13 @@
+[Unit]
+Description=AgentOS local desktop assistant
+After=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/AgentOS
+ExecStart=%h/AgentOS/.venv/bin/python %h/AgentOS/agentos_desktop.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
